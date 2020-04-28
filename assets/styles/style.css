@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: Fira;
+  src: url('/assets/fonts/Fira.ttf') format('truetype');
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Fira;
+  color: black;
+}
+.table-title {
+  margin: 50px 0 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+}
+.table-interval {
+  display: flex;
+  align-items: center;
+}
+.table-interval__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  margin-right: 17px;
+}
+.table-interval__input {
+  width: 36px;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #BFC9E0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+.table-interval__input:focus {
+  outline: none;
+}
+.table-interval__dash {
+  margin: 0 12px;
+}
+.table-inner {
+  position: relative;
+  margin-top: 30px;
+}
+.table-times {
+  width: 526px;
+  display: flex;
+  overflow: hidden;
+  height: 30px;
+  position: relative;
+}
+.table-flex__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 0;
+  transition: left 0.2s ease-in-out;
+}
+.table-time {
+  width: 67px;
+  height: 30px;
+  border-left: 1px solid #DFE4EF;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.table-time:after {
+  content: '';
+  width: 1px;
+  height: 9px;
+  background: #DFE4EF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.table-days {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -30px;
+}
+.table-day {
+  height: 31px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.table-cells {
+  overflow: hidden;
+  display: flex;
+  width: 526px;
+  position: relative;
+  height: 220px;
+}
+.table-cells__flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 825px;
+  position: absolute;
+  left: 0;
+  margin-left: 1px;
+  transition: left 0.2s ease-in-out;
+}
+.table-cell {
+  width: 33px;
+  height: 30px;
+  background: #DFE4EF;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(1, 0.65, 0, 0.14);
+}
+.table-cell.active {
+  background: #0066FF;
+}
+.table-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 21px;
+}
+.table-fillin {
+  border: 1px solid #D3D8DF;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 9px 14px 9px 10px;
+  cursor: pointer;
+}
+.table-fillin__pic {
+  margin-right: 9px;
+}
+.table-fillin__text {
+  font-weight: bold;
+  font-size: 12px;
+}
+.table-clear {
+  margin-left: 10px;
+  border: 1px solid #D3D8DF;
+  border-radius: 50px;
+  padding: 9px 15px 9px 11px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.table-clear__pic {
+  margin-right: 11px;
+}
+.table-clear__text {
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles/style.css">
+	<title>Knockout</title>
+</head>
+
+<body>
+
+	<div class="table">
+		<div class="table-map"></div>
+		<div class="table-item">
+			<div class="table-title">График работы предприятия</div>
+			<div class="table-interval">
+				<span class="table-interval__text">Задать интревал таблицы</span>
+				<input type="text" data-bind="textInput: timer" class='table-interval__input'>
+				<span class="table-interval__dash">-</span>
+				<input type="text" class='table-interval__input'>
+			</div>
+			<div class="table-inner">
+				<div class="table-times">
+					<div class="table-flex__inner">
+						<div class="table-time">1</div>
+						<div class="table-time">3</div>
+						<div class="table-time">5</div>
+						<div class="table-time">7</div>
+						<div class="table-time">9</div>
+						<div class="table-time">11</div>
+						<div class="table-time">13</div>
+						<div class="table-time">15</div>
+						<div class="table-time">17</div>
+						<div class="table-time">19</div>
+						<div class="table-time">21</div>
+						<div class="table-time">23</div>
+					</div>
+				</div>
+				<div class="table-days">
+					<div class="table-day">Пн</div>
+					<div class="table-day">Вт</div>
+					<div class="table-day">Ср</div>
+					<div class="table-day">Чт</div>
+					<div class="table-day">Пт</div>
+					<div class="table-day">Сб</div>
+					<div class="table-day">Вс</div>
+				</div>
+				<div class="table-cells">
+					<div class="table-cells__flex-inner">
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+						<div class="table-cell" data-bind="click: highlight"></div>
+					</div>
+				</div>
+			</div>
+			<div class="table-buttons">
+				<div class="table-fillin" data-bind='click: fillinBlue'>
+					<div class="table-fillin__pic">
+						<img src="images/green.png" alt="pic">
+					</div>
+					<span class="table-fillin__text">
+						Заполнить автоматически
+					</span>
+				</div>
+				<div class="table-clear" data-bind="click: clearBlue">
+					<div class="table-clear__pic">
+						<img src="images/pink.png" alt="pic">
+					</div>
+					<span class="table-clear__text">
+						Очистить
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src='javascripts/knockout.js'></script>
+	<script src='javascripts/script.js'></script>
+</body>
+</html>
